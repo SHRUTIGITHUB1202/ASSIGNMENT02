@@ -1,0 +1,89 @@
+'''write a program to print the largest  and the smallest nuAmber of the list'''
+
+
+mylist=[]
+n=int(input("enter the no of elements you want in a list  "))
+for x in range(n):
+  value=int(input("enter the elements in the list  "))
+  mylist.append(value)
+print("the largest element present in an array  ")
+print(max(mylist))
+print("the smallest element present in an array  ",min(mylist))
+
+
+
+O/P-
+
+
+enter the no of elements you want in a list  5
+enter the elements in the list  23
+enter the elements in the list  12
+enter the elements in the list  1
+enter the elements in the list  6
+enter the elements in the list  500
+the largest element present in an array  
+500
+the smallest element present in an array   1
+
+
+
+__________________________________________________________________________________________________________________________________________
+
+
+
+'''write a program to delete the alternative numbers in the list'''
+
+def alternate_elements(list_data):
+    result=[]
+    for item in list_data[::2]:
+        result.append(item)
+    return result 
+
+mylist=[]
+n=int(input("enter the no of elements you want in a list  "))
+for x in range(n):
+    value=int(input("enter the elements in the list  "))
+    mylist.append(value)
+print(alternate_elements(mylist))
+
+O/P-
+
+enter the no of elements you want in a list  4
+enter the elements in the list  1
+enter the elements in the list  2
+enter the elements in the list  3
+enter the elements in the list  4
+[1, 3]
+
+____________________________________________________________________________________________________________________________________
+
+
+
+
+'''write a program to delete the odd number in list and print the even numbers'''
+ def remove_even(x):
+    for i in x[:]:
+        if (i % 2) != 0:
+            x.remove(i)
+    return x
+
+
+mylist=[]
+n=int(input("enter the no of elements you want in a list  "))
+for x in range(n):
+  value=int(input("enter the elements in the list  "))
+  mylist.append(value)
+print(remove_even(mylist))
+ 
+
+O/P-
+
+
+
+enter the no of elements you want in a list  4
+enter the elements in the list  2
+enter the elements in the list  3
+enter the elements in the list  10
+enter the elements in the list  9
+[2, 10]
+
